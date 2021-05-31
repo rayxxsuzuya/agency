@@ -26,3 +26,9 @@ var _loop = function _loop(x) {
 for (var x = 0; x < tabs.length; x++) {
   _loop(x);
 }
+
+$(".team__slider").slick({
+  slidesToShow: 1,
+  arrows: false,
+  dots: true
+});
