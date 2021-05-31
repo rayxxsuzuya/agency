@@ -452,6 +452,20 @@ img {
   height: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: no-wrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 body {
   font-family: "Halvar Engschrift CY", sans-serif;
   font-weight: 500;
@@ -505,6 +519,26 @@ body {
 
 .offer-link:active {
   opacity: 0.8;
+}
+
+.title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 85px;
+  line-height: 112%;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.detail-link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 125%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #252628;
+  padding: 17px 46px;
+  border: 4px solid #B0D6C1;
 }
 
 /* Header */
@@ -607,6 +641,8 @@ body {
   background-color: #F2D74B;
   opacity: 0.8;
 }
+
+/* Primary */
 
 .primary {
   background: #F1B145;
@@ -718,4 +754,243 @@ body {
 
 .primary__link {
   margin-left: 15px;
+}
+
+/* About */
+
+.about {
+  padding: 120px 0;
+  overflow: hidden;
+}
+
+.about__title {
+  margin-bottom: 35px;
+}
+
+.about__description {
+  max-width: 1050px;
+  font-family: "Calibri";
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 140%;
+  margin: 0;
+  margin-bottom: 29px;
+}
+
+.about__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 93px;
+}
+
+.about__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 315px;
+  width: 100%;
+  margin-top: 25px;
+  margin-right: 76px;
+}
+
+.about__tab {
+  font-weight: 200;
+  font-size: 40px;
+  line-height: 112%;
+  letter-spacing: 0.01em;
+  color: #252628;
+  margin-bottom: 50px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+  white-space: nowrap;
+}
+
+.about__tab:hover,
+.about__tab:focus {
+  padding-left: 40px;
+  font-weight: 500;
+}
+
+.about__tab:before {
+  content: '';
+  opacity: 0;
+  position: absolute;
+  width: 95px;
+  height: 95px;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: #B0D6C1;
+  z-index: -1;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.about__tab:nth-child(2):before {
+  background-color: #F2D74B;
+}
+
+.about__tab:nth-child(3):before {
+  background-color: #CED853;
+}
+
+.about__tab:nth-child(4):before {
+  background-color: #E1B7D0;
+}
+
+.about__tab.active {
+  padding-left: 40px;
+  font-weight: 500;
+  margin-bottom: 75px;
+}
+
+.about__tab.active:before {
+  opacity: 1;
+}
+
+.about__heading {
+  font-weight: 500;
+  font-size: 85px;
+  line-height: 112%;
+  width: 100%;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  max-width: 450px;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.about__contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+
+.about__content {
+  padding: 80px 0 85px 105px;
+  position: relative;
+  display: none;
+  width: 100%;
+}
+
+.about__content:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 5000px;
+  z-index: -1;
+  background-color: #EBF6F8;
+}
+
+.about__content:after {
+  content: '';
+  position: absolute;
+  background: url(../img/about-line.svg) no-repeat;
+  width: 56px;
+  height: 285px;
+  top: -83px;
+  right: 26px;
+  z-index: 2;
+}
+
+.about__content.active {
+  display: block;
+}
+
+.about__content--tourism:before {
+  background-color: #FEFBED;
+}
+
+.about__content--social:before {
+  background: #FAFBEE;
+}
+
+.about__content--city:before {
+  background: #FBF4F8;
+}
+
+.about__wrapping {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin-bottom: 45px;
+}
+
+.about__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.about__item {
+  max-width: 240px;
+  width: 100%;
+}
+
+.about__paragraph {
+  max-width: 420px;
+  width: 100%;
+  font-family: "Calibri";
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 140%;
+  margin-top: 0;
+}
+
+.about__post {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: "Calibri";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 156%;
+}
+
+.about__name {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 117%;
+  margin-top: 0;
+  margin-bottom: 55px;
+}
+
+.about__link--tourism {
+  border: 4px solid #F2D74B;
+}
+
+.about__link--social {
+  border: 4px solid #CED853;
+}
+
+.about__link--city {
+  border: 4px solid #E1B7D0;
 }
