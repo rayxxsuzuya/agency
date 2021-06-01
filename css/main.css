@@ -1879,3 +1879,251 @@ body {
 .news__theme--green {
   background-color: #CED853;
 }
+
+/* Contacts */
+
+.contacts {
+  position: relative;
+  background-color: #F2F6F7;
+}
+
+.contacts:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  z-index: 4;
+  background: url(../img/contacts-map.png) no-repeat;
+  background-size: cover;
+}
+
+.contacts__container {
+  position: relative;
+}
+
+.contacts__container:before {
+  content: '';
+  position: absolute;
+  width: 285px;
+  height: 34px;
+  background: url(../img/contacts-wave.svg) no-repeat;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: -15px;
+  z-index: 10;
+}
+
+.contacts__inner {
+  padding: 120px 0;
+  width: 100%;
+  max-width: 600px;
+  background-color: #F2F6F7;
+  position: relative;
+  z-index: 6;
+}
+
+.contacts__title {
+  margin-bottom: 45px;
+}
+
+.contacts__data {
+  padding-left: 0;
+  margin-bottom: 60px;
+}
+
+.contacts__item {
+  padding-left: 40px;
+  max-width: 395px;
+  position: relative;
+  margin-bottom: 35px;
+  font-family: "Calibri";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 145%;
+}
+
+.contacts__item:last-child {
+  margin-bottom: 0;
+}
+
+.contacts__item--flag:before {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 25px;
+  background: url(../../img/contacts-flag-icon.svg);
+  left: 0;
+  top: 5px;
+}
+
+.contacts__item--clock:before {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: url(../../img/contacts-clock-icon.svg);
+  left: 0;
+  top: 5px;
+}
+
+.contacts__item--phone:before {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: url(../../img/contacts-phone-icon.svg);
+  left: 0;
+  top: 5px;
+}
+
+.contacts__item--mail:before {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: url(../../img/contacts-mail-icon.svg);
+  left: 0;
+  top: 5px;
+}
+
+.contacts__phone {
+  color: inherit;
+}
+
+.contacts__mail {
+  color: inherit;
+}
+
+.contacts__caption {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 129%;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.contacts__list {
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contacts__point {
+  margin-right: 30px;
+}
+
+.contacts__point:last-child {
+  margin-right: 0;
+}
+
+.contacts__icon {
+  display: block;
+}
+
+.footer {
+  background-color: #252628;
+  padding: 70px 0 20px;
+  color: #F2F6F7;
+}
+
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.footer__list {
+  margin: 0;
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-width: 297px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.footer__item {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 138%;
+  width: calc(50% - 15px);
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+
+.footer__item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.footer__item:last-child {
+  margin-bottom: 0;
+}
+
+.footer__link {
+  color: #F2F6F7;
+}
+
+.footer__copyright {
+  font-family: "Calibri";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 138%;
+  color: #7C7C7C;
+  margin: 0;
+}
+
+.footer__block {
+  max-width: 310px;
+  width: 100%;
+}
+
+.footer__point {
+  padding-left: 35px;
+  font-family: "Calibri";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  margin-top: 0;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.footer__point:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: 7px;
+}
+
+.footer__point:nth-child(1):before {
+  background: url(../img/footer-flag-icon.svg) no-repeat;
+}
+
+.footer__point:nth-child(2):before {
+  background: url(../img/footer-mail-icon.svg) no-repeat;
+  top: 5px;
+}
+
+.footer__point:last-child {
+  margin-bottom: 0;
+}
+
+.footer__mail {
+  color: inherit;
+}
