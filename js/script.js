@@ -27,6 +27,13 @@ for (var x = 0; x < tabs.length; x++) {
   _loop(x);
 }
 
+var burger = document.querySelector('.header__burger');
+var mobile = document.querySelector('.header__mobile');
+burger.addEventListener('click', function (e) {
+  e.preventDefault();
+  this.classList.toggle('active');
+  mobile.classList.toggle('active');
+});
 $(".team__slider").slick({
   slidesToShow: 1,
   arrows: false,
