@@ -1,6 +1,12 @@
 "use strict";
 
+/* Loader */
+window.onload = function () {
+  document.querySelector('.loader').style.display = 'none';
+};
 /* Tabs */
+
+
 var tabs = document.querySelectorAll(".tabs");
 var contents = document.querySelectorAll(".contents");
 
