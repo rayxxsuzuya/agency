@@ -1,6 +1,12 @@
 "use strict";
 
+/* Loader */
+window.onload = function () {
+  document.querySelector('.loader').style.display = 'none';
+};
 /* Tabs */
+
+
 var tabs = document.querySelectorAll(".tabs");
 var contents = document.querySelectorAll(".contents");
 
@@ -118,7 +124,37 @@ modalClose[0].addEventListener("keydown", function (e) {
     document.querySelector('.modal__area--first').focus();
   }
 });
+/* About Slider */
+
+var slides = document.querySelectorAll('.about__contents .about__content');
+var currentSlide = 0;
+
+function nextSlide() {
+  goToSlide(currentSlide + 1);
+}
+
+function previousSlide() {
+  goToSlide(currentSlide - 1);
+}
+
+function goToSlide(n) {
+  slides[currentSlide].classList.remove('active');
+  currentSlide = (n + slides.length) % slides.length;
+  slides[currentSlide].classList.add('active');
+}
+
+var next = document.querySelector('.about__next');
+var previous = document.querySelector('.about__prev');
+
+next.onclick = function () {
+  nextSlide();
+};
+
+previous.onclick = function () {
+  previousSlide();
+};
 /* Slick slider */
+
 
 $(".team__slider").slick({
   slidesToShow: 1,
