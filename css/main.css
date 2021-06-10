@@ -2876,13 +2876,10 @@ body {
   .team__title {
     font-size: 65px;
   }
-<<<<<<< HEAD
 
   .calendar__title {
     font-size: 65px;
   }
-=======
->>>>>>> aad138aabd3e502a5618ea0932ae7205285e378e
 }
 
 @media (max-width: 639px) {
@@ -2910,7 +2907,6 @@ body {
   .about__content:before {
     left: -15px;
   }
-<<<<<<< HEAD
 
   .calendar__block {
     margin: 0;
@@ -2924,8 +2920,6 @@ body {
     margin-left: 0;
     margin-right: 0;
   }
-=======
->>>>>>> aad138aabd3e502a5618ea0932ae7205285e378e
 }
 
 @media (max-width: 560px) {
@@ -2986,7 +2980,6 @@ body {
   .team__description {
     margin-bottom: 20px;
   }
-<<<<<<< HEAD
 
   .calendar {
     padding: 90px 0;
@@ -3062,8 +3055,6 @@ body {
     -ms-flex-pack: center;
     justify-content: center;
   }
-=======
->>>>>>> aad138aabd3e502a5618ea0932ae7205285e378e
 }
 
 @media (max-width: 500px) {
@@ -3460,7 +3451,6 @@ body {
     margin-top: 30px;
     margin-bottom: 0;
   }
-<<<<<<< HEAD
 
   .calendar {
     padding: 50px 0 65px;
@@ -3521,6 +3511,4 @@ body {
   .calendar__item:last-child {
     margin-bottom: 0;
   }
-=======
->>>>>>> aad138aabd3e502a5618ea0932ae7205285e378e
 }
