@@ -2671,6 +2671,7 @@ body {
 
 .footer__link {
   color: #F2F6F7;
+  word-wrap: break-word;
 }
 
 .footer__copyright {
@@ -2979,6 +2980,16 @@ body {
   .concept__image {
     margin-left: 0;
   }
+
+  .footer__inner {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .footer__list {
+    max-width: 446px;
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -3024,6 +3035,67 @@ body {
   .news__item {
     width: 100%;
     margin-right: 0;
+  }
+
+  .footer__inner {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .footer__logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  .footer__list {
+    max-width: 100%;
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .footer__item {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .footer__item:nth-child(2) {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+
+  .footer__item:nth-child(3) {
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 0;
+    order: 0;
+  }
+
+  .footer__item:nth-child(4) {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+
+  .footer__item:last-child {
+    margin-bottom: 15px;
+  }
+
+  .footer__block {
+    max-width: 256px;
+  }
+
+  .footer__copyright {
+    text-align: center;
   }
 }
 
@@ -3964,5 +4036,39 @@ body {
 
   .contacts__point {
     margin-right: 25px;
+  }
+
+  .footer {
+    padding: 28px 0 10px;
+  }
+
+  .footer__logo {
+    margin-bottom: 25px;
+  }
+
+  .footer__block {
+    max-width: 208px;
+  }
+
+  .footer__inner {
+    margin-bottom: 25px;
+  }
+
+  .footer__list {
+    margin-bottom: 10px;
+  }
+
+  .footer__point {
+    font-size: 14px;
+    line-height: 171%;
+    margin-bottom: 10px;
+  }
+
+  .footer__point:nth-child(2):before {
+    top: 0;
+  }
+
+  .footer-hide {
+    display: none;
   }
 }
