@@ -2514,8 +2514,7 @@ body {
 
 .contacts__inner {
   padding: 120px 0;
-  width: 100%;
-  max-width: 600px;
+  width: 31.25vw;
   background-color: #F2F6F7;
   position: relative;
   z-index: 6;
@@ -2982,6 +2981,29 @@ body {
   }
 }
 
+@media (max-width: 800px) {
+  .contacts:after {
+    position: static;
+    padding-bottom: 50%;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    display: block;
+  }
+
+  .contacts__container:before {
+    width: 135px;
+    height: 16.11px;
+    top: -20px;
+    background-size: cover;
+  }
+
+  .contacts__inner {
+    padding: 80px 0 40px;
+    width: 100%;
+  }
+}
+
 @media (max-width: 740px) {
   .press__block {
     -ms-flex-wrap: wrap;
@@ -3375,6 +3397,10 @@ body {
   .concept__title {
     font-size: 55px;
     margin-bottom: 20px;
+  }
+
+  .contacts__title {
+    font-size: 75px;
   }
 }
 
@@ -3889,5 +3915,54 @@ body {
 
   .news__item {
     margin-bottom: 35px;
+  }
+
+  .contacts:after {
+    padding-bottom: 0;
+    height: 290px;
+  }
+
+  .contacts__inner {
+    padding: 45px 0 30px;
+  }
+
+  .contacts__title {
+    font-size: 35px;
+    line-height: 114%;
+    margin-bottom: 20px;
+  }
+
+  .contacts__list {
+    margin: 0;
+  }
+
+  .contacts__item {
+    font-size: 18px;
+    line-height: 114%;
+    margin-bottom: 25px;
+  }
+
+  .contacts__item--clock:before,
+  .contacts__item--phone:before,
+  .contacts__item--mail:before {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .contacts__data {
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+
+  .contacts__caption {
+    font-size: 25px;
+    line-height: 140%;
+    margin-bottom: 20px;
+  }
+
+  .contacts__point {
+    margin-right: 25px;
   }
 }
