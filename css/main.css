@@ -2584,6 +2584,37 @@ body {
   top: 5px;
 }
 
+.contacts__icon {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.contacts__path {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.contacts__link {
+  outline: none;
+}
+
+.contacts__link:hover .contacts__icon--facebook .contacts__path,
+.contacts__link:focus .contacts__icon--facebook .contacts__path {
+  fill: #3b5998;
+}
+
+.contacts__link:hover .contacts__icon--vk .contacts__path,
+.contacts__link:focus .contacts__icon--vk .contacts__path {
+  fill: #4d7198;
+}
+
+.contacts__link:hover .contacts__icon--instagram .contacts__path,
+.contacts__link:focus .contacts__icon--instagram .contacts__path {
+  fill: #c13584;
+}
+
 .contacts__phone {
   color: inherit;
 }
