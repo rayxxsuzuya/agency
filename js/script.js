@@ -6,7 +6,14 @@ $(function () {
     slidesToShow: 2,
     slidesToScroll: 1,
     arrows: false,
-    dots: true
+    dots: true,
+    responsive: [{
+      breakpoint: 601,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }]
   });
   $(".team__slider").slick({
     slidesToShow: 1,
